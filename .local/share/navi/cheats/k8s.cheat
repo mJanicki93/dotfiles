@@ -1,0 +1,58 @@
+% kubernetess, bc
+
+# Dev cluster
+gcloud container clusters get-credentials dev-europe-west3-bluconsole --zone europe-west3-a --project blulog-cloud
+
+# Test cluster
+gcloud container clusters get-credentials blulog-test --zone europe-west3-b --project blulog-cloud
+
+# Prod cluster
+gcloud container clusters get-credentials blulog-prod --zone europe-west3-a --project blulog-cloud
+
+
+% ssh, bc, vm, pf
+
+# SSH to SVC
+gcloud compute ssh --zone europe-west3-a <svc> --tunnel-through-iap --project blulog-cloud
+
+$ svc: echo "svc-01 svc-02 svc-03 svc-04 svc-05 svc-06 monitor" | tr ' ' '\n'
+
+# PF Mysql
+kubectl port-forward svc/haproxy 3306:3306
+
+# PF Clickhouse
+kubectl port-forward svc/haproxy 8123:8123
+
+# PF Clickhouse 2
+kubectl port-forward svc/haproxy 8124:8124
+
+# PF Redis
+kubectl port-forward svc/haproxy 6379:6379
+
+% bc, redis
+
+# Clear redis breaches-report-generator
+sh ~/Scripts/tool-queue-clear.sh orm.generator_BreachesReportEntity breaches-report-generator
+
+# Clear redis report-generator
+sh ~/Scripts/tool-queue-clear.sh orm.generator_ReportEntity report-generator
+
+% notes
+
+# Notes
+nvim ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Notes
+
+% cheats
+
+# Cheats
+nvim ~/.local/share/navi/cheats/k8s.cheat
+
+% argo
+
+# Deploy Argo apps
+kubectl apply -f ~/repos/chef-repo/argo/<env> -n argocd
+
+$ env: echo "prod/ dev/" | tr ' ' '\n'
+
+# PF Argo server
+kubectl port-forward svc/argocd-server -n argocd 9090:443
