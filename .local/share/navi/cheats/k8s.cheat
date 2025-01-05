@@ -15,7 +15,13 @@ gcloud container clusters get-credentials blulog-prod --zone europe-west3-a --pr
 # SSH to SVC
 gcloud compute ssh --zone europe-west3-a <svc> --tunnel-through-iap --project blulog-cloud
 
-$ svc: echo "svc-01 svc-02 svc-03 svc-04 svc-05 svc-06 monitor" | tr ' ' '\n'
+$ svc: echo "svc-01 svc-02 svc-03 svc-04 svc-05 svc-06 monitor-backup-20241202-123018" | tr ' ' '\n'
+
+# SSH to Monitor
+gcloud compute ssh --zone europe-west3-b monitor-backup-20241202-123018 --tunnel-through-iap --project blulog-cloud
+
+# SSH to Test
+gcloud compute ssh --zone "europe-west3-b" "bluconsole-test" --project "blulog-cloud"
 
 # PF Mysql
 kubectl port-forward svc/haproxy 3306:3306
@@ -37,6 +43,15 @@ sh ~/Scripts/tool-queue-clear.sh orm.generator_BreachesReportEntity breaches-rep
 # Clear redis report-generator
 sh ~/Scripts/tool-queue-clear.sh orm.generator_ReportEntity report-generator
 
+# Clear redis alert-event-logger
+sh ~/Scripts/tool-queue-clear.sh msg.alert_events_logger_modulo_1 alert-event-logger
+
+# Clear redis last_measurements
+sh ~/Scripts/tool-queue-clear.sh fanout.msg.last_measurements_modulo_1 measurement-analyzer
+
+# Clear redis last_measurement webfleet
+sh ~/Scripts/tool-queue-clear.sh fanout.msg.last_measurements_modulo_1 measurement-analyzer fanout.msg.last_measurements_modulo_1_group_web_fleet
+
 % notes
 
 # Notes
@@ -55,4 +70,9 @@ kubectl apply -f ~/repos/chef-repo/argo/<env> -n argocd
 $ env: echo "prod/ dev/" | tr ' ' '\n'
 
 # PF Argo server
-kubectl port-forward svc/argocd-server -n argocd 9090:443
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+
+% priv
+
+# MIKRUS
+ssh root@srv12.mikr.us -p 10158
