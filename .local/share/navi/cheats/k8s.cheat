@@ -43,6 +43,10 @@ sh ~/Scripts/tool-queue-clear.sh orm.generator_BreachesReportEntity breaches-rep
 # Clear redis report-generator
 sh ~/Scripts/tool-queue-clear.sh orm.generator_ReportEntity report-generator
 
+# Clear redis alert-indexer
+sh ~/Scripts/tool-queue-clear.sh orm.es_index_AlertEntity alert-indexer
+
+
 # Clear redis alert-event-logger
 sh ~/Scripts/tool-queue-clear.sh msg.alert_events_logger_modulo_1 alert-event-logger
 

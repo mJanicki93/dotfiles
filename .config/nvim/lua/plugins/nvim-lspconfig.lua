@@ -5,6 +5,7 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
+      marksman = {},
       terraformls = {},
       gopls = {
         keys = {
