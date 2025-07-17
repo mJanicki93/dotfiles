@@ -55,6 +55,9 @@ return {
       basedpyright = {
         enabled = lsp == "basedpyright",
       },
+      ts_ls = {
+        enabled = lsp == "ts_ls",
+      },
       [lsp] = {
         enabled = true,
       },

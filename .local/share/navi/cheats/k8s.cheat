@@ -59,7 +59,7 @@ sh ~/Scripts/tool-queue-clear.sh fanout.msg.last_measurements_modulo_1 measureme
 % notes
 
 # Notes
-nvim ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Notes
+nvim ~/notes/Notes/notes/
 
 % cheats
 
