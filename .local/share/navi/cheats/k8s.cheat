@@ -46,6 +46,8 @@ sh ~/Scripts/tool-queue-clear.sh orm.generator_ReportEntity report-generator
 # Clear redis alert-indexer
 sh ~/Scripts/tool-queue-clear.sh orm.es_index_AlertEntity alert-indexer
 
+# Clear redis alert-notifications
+sh ~/Scripts/tool-queue-clear.sh msg.alert_notifications alert-notifications
 
 # Clear redis alert-event-logger
 sh ~/Scripts/tool-queue-clear.sh msg.alert_events_logger_modulo_1 alert-event-logger
