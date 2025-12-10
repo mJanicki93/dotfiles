@@ -89,7 +89,13 @@ return {
       gopls = function(_, opts)
         -- workaround for gopls not supporting semanticTokensProvider
         -- https://github.com/golang/go/issues/54531#issuecomment-1464982242
-        LazyVim.lsp.on_attach(function(client, _)
+        Snacks.util.lsp.on(function(client_id, _)
+          -- POPRAWKA: Pobieramy obiekt klienta na podstawie ID
+          local client = vim.lsp.get_client_by_id(client_id)
+          if not client then
+            return
+          end
+
           if client.name == "gopls" then
             if not client.server_capabilities.semanticTokensProvider then
               local semantic = client.config.capabilities.textDocument.semanticTokens
@@ -106,9 +112,18 @@ return {
         end)
         -- end workaround
       end,
-      [ruff] = function()
-        LazyVim.lsp.on_attach(function(client, _)
-          if client.name == ruff then
+
+      -- Używamy klucza tekstowego "ruff" zamiast zmiennej [ruff], chyba że masz ją zdefiniowaną wyżej
+      ["ruff"] = function()
+        Snacks.util.lsp.on(function(client_id, _)
+          -- POPRAWKA: To samo tutaj, zamiana ID na obiekt
+          local client = vim.lsp.get_client_by_id(client_id)
+          if not client then
+            return
+          end
+
+          -- POPRAWKA: "ruff" musi być w cudzysłowie (string), chyba że ruff to zmienna lokalna
+          if client.name == "ruff" then
             -- Disable hover in favor of Pyright
             client.server_capabilities.hoverProvider = false
           end
