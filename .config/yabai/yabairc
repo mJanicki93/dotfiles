@@ -27,3 +27,5 @@ yabai -m mouse_drop_action swap
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
+yabai -m signal --add app='Brave' event='window_title_changed' action="yabai -m rule --apply app='Brave' title='Bitwarden' manage=off grid=10:10:3:3:6:6"
+# yabai -m rule --add app='Google Chrome' title='Bitwarden' manage=off grid=10:10:3:3:6:6
