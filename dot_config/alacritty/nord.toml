@@ -1,0 +1,102 @@
+# Importów nie potrzebujemy, wklejam kolory na sztywno, żeby działało od ręki.
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+# Tytuł okna
+title = "Alacritty"
+
+# Marginesy wewnątrz terminala (żeby tekst nie kleił się do ramki)
+padding = { x = 10, y = 10 }
+
+# Dekoracje okna (full = standardowa belka, buttonless, none)
+decorations = "full"
+
+# Przezroczystość (0.0 - niewidzialne, 1.0 - pełne tło)
+# Jeśli w Neovimie włączyłeś `transparent = true`, tutaj ustaw np. 0.90 lub 0.95
+opacity = 1.0
+blur = false
+
+# Startowy tryb okna
+startup_mode = "Windowed"
+
+[scrolling]
+# Ile linii historii trzymać
+history = 10000
+multiplier = 3
+
+[font]
+# WAŻNE: Upewnij się, że masz zainstalowany ten font w systemie.
+# Jeśli używasz innego (np. Hack, FiraCode), zmień nazwę w cudzysłowie.
+# Musi to być wersja "Nerd Font", żebyś widział ikony w LazyVim.
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+
+# Rozmiar czcionki
+size = 13.0
+
+# Renderowanie fontów (często pomaga na macOS, na Linuxie można zostawić domyślne)
+# use_thin_strokes = true 
+
+[colors]
+# NORD THEME - Official Palette
+
+[colors.primary]
+background = "#2E3440"
+foreground = "#D8DEE9"
+dim_foreground = "#A5ABB6"
+
+[colors.cursor]
+text = "#2E3440"
+cursor = "#D8DEE9"
+
+[colors.vi_mode_cursor]
+text = "#2E3440"
+cursor = "#D8DEE9"
+
+[colors.selection]
+text = "CellForeground"
+background = "#4C566A"
+
+[colors.search.matches]
+foreground = "CellBackground"
+background = "#88C0D0"
+
+[colors.search.focused_match]
+foreground = "CellBackground"
+background = "#EBCB8B"
+
+# Normal colors
+[colors.normal]
+black = "#3B4252"
+red = "#BF616A"
+green = "#A3BE8C"
+yellow = "#EBCB8B"
+blue = "#81A1C1"
+magenta = "#B48EAD"
+cyan = "#88C0D0"
+white = "#E5E9F0"
+
+# Bright colors (w Nordzie często są to te same, lub jaśniejsze odcienie)
+[colors.bright]
+black = "#4C566A"
+red = "#BF616A"
+green = "#A3BE8C"
+yellow = "#EBCB8B"
+blue = "#81A1C1"
+magenta = "#B48EAD"
+cyan = "#8FBCBB"
+white = "#ECEFF4"
+
+[colors.dim]
+black = "#373E4D"
+red = "#94545D"
+green = "#809575"
+yellow = "#B29E75"
+blue = "#68809A"
+magenta = "#8C738C"
+cyan = "#6D96A5"
+white = "#AEB3BB"

@@ -1,0 +1,130 @@
+#!/usr/bin/env bash
+
+# Ścieżki
+VAULT_ROOT="$HOME/notes"
+INBOX_DIR="$VAULT_ROOT/00_Inbox"
+TEMPLATE_FILE="$VAULT_ROOT/06_Templates/Note.md"
+
+# Dane podstawowe
+DATE=$(date +%Y-%m-%d)
+TIME=$(date +%H:%M)
+
+# Logika argumentów: $1 to treść, $2 (opcjonalnie) to tytuł
+CONTENT="$1"
+if [[ -n "$2" ]]; then
+    TITLE="$2"
+else
+    TITLE="$DATE"
+fi
+
+# 1. Walidacja - musimy mieć chociaż treść
+if [[ -z "$CONTENT" ]]; then
+    echo "Błąd: Nie podano treści notatki."
+    echo "Użycie: obs-note 'Treść' ['Opcjonalny Tytuł']"
+    exit 1
+fi
+
+FILE_PATH="$INBOX_DIR/$TITLE.md"
+
+# 2. Jeśli plik nie istnieje, utwórz go z szablonu
+if [ ! -f "$FILE_PATH" ]; then
+    mkdir -p "$INBOX_DIR"
+    if [ -f "$TEMPLATE_FILE" ]; then
+        sed -e "s/{{title}}/$TITLE/g" -e "s/{{date}}/$DATE/g" "$TEMPLATE_FILE" > "$FILE_PATH"
+    else
+        echo -e "# $TITLE\nData: $DATE\n\n## Notatki\n\n---\n### Relacje" > "$FILE_PATH"
+    fi
+fi
+
+# 3. Przygotowanie wpisu (najnowsze na górze sekcji)
+NEW_ENTRY="\n### $TIME\n$CONTENT"
+
+# 4. Wstawianie treści pod nagłówkiem "## Notatki" za pomocą awk
+awk -v entry="$NEW_ENTRY" '/## Notatki/ { print; print entry; next }1' "$FILE_PATH" > "$FILE_PATH.tmp" && mv "$FILE_PATH.tmp" "$FILE_PATH"
+
+echo "✅ Zapisano w: $TITLE.md"
+
+# #!/usr/bin/env bash
+#
+# # Ścieżki
+# VAULT_ROOT="$HOME/notes"
+# INBOX_DIR="$VAULT_ROOT/00_Inbox"
+# TEMPLATE_FILE="$VAULT_ROOT/06_Templates/Note.md"
+#
+# # Dane
+# DATE=$(date +%Y-%m-%d)
+# TIME=$(date +%H:%M)
+# # TITLE="$1"
+# CONTENT="$1"
+#
+# # 1. Walidacja
+# if [[ -z "$TITLE" || -z "$CONTENT" ]]; then
+#     echo "Błąd: Brak tytułu lub treści."
+#     echo "Użycie: obs-note 'Tytuł' 'Treść'"
+#     exit 1
+# fi
+#
+# FILE_PATH="$INBOX_DIR/$DATE.md"
+#
+# # 2. Jeśli plik nie istnieje, utwórz go z szablonu
+# if [ ! -f "$FILE_PATH" ]; then
+#     mkdir -p "$INBOX_DIR"
+#     if [ -f "$TEMPLATE_FILE" ]; then
+#         sed -e "s/{{title}}/$DATE/g" -e "s/{{date}}/$DATE/g" "$TEMPLATE_FILE" > "$FILE_PATH"
+#     else
+#         # Fallback gdyby nie było szablonu
+#         echo -e "# $DATE\nData: $DATE\n\n## Notatki\n\n---\n### Relacje" > "$FILE_PATH"
+#     fi
+# fi
+#
+# # 3. Wstawianie treści pod nagłówkiem "## Notatki"
+# # Przygotowujemy wpis z nagłówkiem czasowym
+# NEW_ENTRY="\n### $TIME\n$CONTENT"
+#
+# # Używamy awk do wstawienia treści zaraz po linii "## Notatki"
+# # Działa to tak: szukamy wzorca, wypisujemy go, a potem dopisujemy naszą treść.
+# awk -v entry="$NEW_ENTRY" '/## Notatki/ { print; print entry; next }1' "$FILE_PATH" > "$FILE_PATH.tmp" && mv "$FILE_PATH.tmp" "$FILE_PATH"
+#
+# echo "✅ Zapisano pod '## Notatki' w: $DATE.md"
+# #!/usr/bin/env bash
+# VAULT_PATH="$HOME/notes/00_Inbox"
+# DATE=$(date +%Y-%m-%d)
+# TIME=$(date +%H:%M)
+# TITLE=$1
+# echo "[$DATE - $TIME] $2" >> "$VAULT_PATH/$TITLE.md"
+# echo "Zapisano w Inbox"
+
+#
+# VAULT_PATH="$HOME/notes/01_Daily"
+# DATE=$(date +%Y-%m-%d)
+# TIME=$(date +%H:%M)
+# DAILY_NOTE="$VAULT_PATH/$DATE.md"
+#
+# # Złapanie wszystkich argumentów (dzięki temu nie musisz używać cudzysłowów)
+# MESSAGE="$*"
+#
+# if [ -z "$MESSAGE" ]; then
+#     echo "Błąd: Podaj treść notatki!"
+#     echo "Użycie: obs-note Treść mojej notatki"
+#     exit 1
+# fi
+#
+# if [ ! -f "$DAILY_NOTE" ]; then
+#     echo "Błąd: Plik $DATE.md jeszcze nie istnieje w 01_Daily!"
+#     echo "Utwórz dzisiejszą notatkę w Obsidianie przed logowaniem."
+#     exit 1
+# fi
+#
+# # Tworzymy plik tymczasowy
+# TEMP_FILE=$(mktemp)
+#
+# # Używamy awk do znalezienia nagłówka i wklejenia logu zaraz pod nim
+# awk -v time="$TIME" -v msg="$MESSAGE" '
+# {
+#     print $0
+#     if ($0 ~ /^## Log Dnia \(Spotkania & Praca\)/) {
+#         print "- **" time "** – " msg
+#     }
+# }' "$DAILY_NOTE" > "$TEMP_FILE" && mv "$TEMP_FILE" "$DAILY_NOTE"
+#
+# echo "Zapisano pod Logiem Dnia ($DATE): $MESSAGE"

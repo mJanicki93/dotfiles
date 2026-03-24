@@ -1,0 +1,98 @@
+#!/bin/bash
+
+# ==========================================
+# Zmienne globalne i domyślne
+# ==========================================
+GCP_PROJECT="blulog-cloud"
+GCP_REGION="europe-west3"
+DEFAULT_ZONE="europe-west3-a" # Strefa domyślna, jeśli nie podasz flagi
+
+# Zmienna, która będzie nadpisywana przez flagę
+ZONE=$DEFAULT_ZONE
+
+# ==========================================
+# Parsowanie flag (Opcje muszą być na początku)
+# ==========================================
+while [[ "$1" == -* ]]; do
+    case "$1" in
+        -z|--zone)
+            ZONE="$2"
+            shift 2
+            ;;
+        -h|--help)
+            echo "Użycie: $0 [-z | --zone <strefa>] import <typ_zasobu> <nazwa_1> [nazwa_2 ...]"
+            echo "Przykłady:"
+            echo "  $0 import compute_address adres-1"
+            echo "  $0 -z europe-west3-c import compute_instance vm-1 vm-2"
+            exit 0
+            ;;
+        *)
+            echo "❌ Błąd: Nieznana flaga '$1'."
+            exit 1
+            ;;
+    esac
+done
+
+# ==========================================
+# Walidacja argumentów pozycyjnych
+# ==========================================
+if [ "$#" -lt 3 ]; then
+    echo "❌ Błąd: Za mało argumentów. Użyj '$0 --help' po więcej informacji."
+    exit 1
+fi
+
+ACTION=$1
+RESOURCE_TYPE=$2
+# Przesuwamy argumenty, żeby w tablicy zostały same nazwy zasobów
+shift 2
+RESOURCE_NAMES=("$@")
+
+if [ "$ACTION" != "import" ]; then
+    echo "❌ Błąd: Nieznana akcja '$ACTION'. Obsługiwane akcje: import."
+    exit 1
+fi
+
+# ==========================================
+# Główna pętla wykonawcza
+# ==========================================
+SUCCESS_COUNT=0
+ERROR_COUNT=0
+
+for NAME in "${RESOURCE_NAMES[@]}"; do
+    echo "----------------------------------------"
+    echo "🔄 Przetwarzanie: $NAME (Typ: $RESOURCE_TYPE)"
+
+    # Szablonowanie na podstawie typu zasobu
+    case "$RESOURCE_TYPE" in
+        
+        compute_address)
+            TF_ADDRESS="module.compute_address.google_compute_address.this[\"${NAME}\"]"
+            GCP_ID="projects/${GCP_PROJECT}/regions/${GCP_REGION}/addresses/${NAME}"
+            ;;
+            
+        compute_instance)
+            echo "📍 Strefa: $ZONE"
+            TF_ADDRESS="google_compute_instance.this[\"${NAME}\"]"
+            GCP_ID="projects/${GCP_PROJECT}/zones/${ZONE}/instances/${NAME}"
+            ;;
+
+        *)
+            echo "❌ Błąd: Nieznany typ zasobu '$RESOURCE_TYPE'."
+            echo "Dostępne typy to: compute_address, compute_instance"
+            exit 1
+            ;;
+    esac
+
+    echo "🚀 Wykonuję: terraform import '${TF_ADDRESS}' '${GCP_ID}'"
+    
+    if terraform import "${TF_ADDRESS}" "${GCP_ID}"; then
+        echo "✅ Sukces: Zaimportowano $NAME"
+        ((SUCCESS_COUNT++))
+    else
+        echo "❌ Błąd: Import $NAME zakończył się niepowodzeniem."
+        ((ERROR_COUNT++))
+    fi
+done
+
+echo "========================================"
+echo "Zakończono! Pomyślnie: $SUCCESS_COUNT | Błędy: $ERROR_COUNT"

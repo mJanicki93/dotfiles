@@ -1,0 +1,93 @@
+% kubernetess, bc
+
+# Dev cluster
+gcloud container clusters get-credentials dev-europe-west3-bluconsole --zone europe-west3-a --project blulog-cloud
+
+# Test cluster
+gcloud container clusters get-credentials blulog-test --zone europe-west3-b --project blulog-cloud
+
+# Prod cluster
+gcloud container clusters get-credentials blulog-prod --zone europe-west3-a --project blulog-cloud
+
+
+% ssh, bc, vm, pf
+
+# SSH to SVC
+gcloud compute ssh --zone europe-west3-a <svc> --tunnel-through-iap --project blulog-cloud
+
+$ svc: echo "svc-01 svc-02 svc-03 svc-04 svc-05 svc-06 monitor-backup-20241202-123018" | tr ' ' '\n'
+
+# SSH to Monitor
+gcloud compute ssh --zone europe-west3-b monitor-backup-20241202-123018 --tunnel-through-iap --project blulog-cloud
+
+# SSH to Ansible
+gcloud compute ssh --zone "europe-west3-a" "ansible-control-node" --tunnel-through-iap --project "blulog-cloud"
+
+# SSH to Test
+gcloud compute ssh --zone "europe-west3-b" "bluconsole-test" --project "blulog-cloud"
+
+# PF Mysql
+kubectl port-forward svc/haproxy 3306:3306
+
+# PF Clickhouse
+kubectl port-forward svc/haproxy 8123:8123
+
+# PF Clickhouse 2
+kubectl port-forward svc/haproxy 8124:8124
+
+# PF Redis
+kubectl port-forward svc/haproxy 6379:6379
+
+% bc, redis
+
+# Clear redis breaches-report-generator
+sh ~/Scripts/tool-queue-clear.sh orm.generator_BreachesReportEntity breaches-report-generator
+
+# Clear redis report-generator
+sh ~/Scripts/tool-queue-clear.sh orm.generator_ReportEntity report-generator
+
+# Clear redis alert-indexer
+sh ~/Scripts/tool-queue-clear.sh orm.es_index_AlertEntity alert-indexer
+
+# Clear redis alert-notifications
+sh ~/Scripts/tool-queue-clear.sh msg.alert_notifications alert-notifications
+
+# Clear redis alert-event-logger
+sh ~/Scripts/tool-queue-clear.sh msg.alert_events_logger_modulo_1 alert-event-logger
+
+# Clear redis last_measurements
+sh ~/Scripts/tool-queue-clear.sh fanout.msg.last_measurements_modulo_1 measurement-analyzer
+
+# Clear redis last_measurement webfleet
+sh ~/Scripts/tool-queue-clear.sh fanout.msg.last_measurements_modulo_1 measurement-analyzer fanout.msg.last_measurements_modulo_1_group_web_fleet
+
+% notes
+
+# Notes
+nvim ~/notes/Notes/notes/
+
+% cheats
+
+# Cheats
+nvim ~/.local/share/navi/cheats/k8s.cheat
+
+% argo
+
+# Deploy Argo apps
+kubectl apply -f ~/repos/chef-repo/argo/<env> -n argocd
+
+$ env: echo "prod/ dev/" | tr ' ' '\n'
+
+# PF Argo server
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+
+# Promote full all
+kubectl get rollouts -n default -o custom-columns=":metadata.name" --no-headers | xargs -I {} kubectl argo rollouts promote --full {} -n default
+
+# Argo restart all
+kubectl get rollouts -n default -o custom-columns=":metadata.name" --no-headers | xargs -I {} kubectl argo rollouts restart {} -n default
+
+% priv
+
+# MIKRUS
+ssh root@srv12.mikr.us -p 10158

@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+# VAULT_PATH="$HOME/notes/00_Inbox"
+# DATE=$(date +%Y-%m-%d)
+# TIME=$(date +%H:%M)
+#
+# echo "- [$TIME] $1" >> "$VAULT_PATH/Inbox_$DATE.md"
+# echo "Zapisano w Inbox"
+
+
+VAULT_PATH="$HOME/notes/01_Daily"
+DATE=$(date +%Y-%m-%d)
+TIME=$(date +%H:%M)
+DAILY_NOTE="$VAULT_PATH/$DATE.md"
+
+# Złapanie wszystkich argumentów (dzięki temu nie musisz używać cudzysłowów)
+MESSAGE="$*"
+
+if [ -z "$MESSAGE" ]; then
+    echo "Błąd: Podaj treść notatki!"
+    echo "Użycie: obs-note Treść mojej notatki"
+    exit 1
+fi
+
+if [ ! -f "$DAILY_NOTE" ]; then
+    echo "Błąd: Plik $DATE.md jeszcze nie istnieje w 01_Daily!"
+    echo "Utwórz dzisiejszą notatkę w Obsidianie przed logowaniem."
+    exit 1
+fi
+
+# Tworzymy plik tymczasowy
+TEMP_FILE=$(mktemp)
+
+# Używamy awk do znalezienia nagłówka i wklejenia logu zaraz pod nim
+awk -v time="$TIME" -v msg="$MESSAGE" '
+{
+    print $0
+    if ($0 ~ /^## Log Dnia \(Spotkania & Praca\)/) {
+        print "- **" time "** – " msg
+    }
+}' "$DAILY_NOTE" > "$TEMP_FILE" && mv "$TEMP_FILE" "$DAILY_NOTE"
+
+echo "Zapisano pod Logiem Dnia ($DATE): $MESSAGE"
