@@ -1,0 +1,36 @@
+/* Główne okno - lekkie przyciemnienie tła */
+window {
+    background-color: rgba(45, 53, 59, 0.85); /* Everforest bg z alfą */
+}
+
+/* Wspólne style dla wszystkich przycisków */
+
+button {
+    background-color: #343f44; /* @bg-alt */
+    color: #d3c6aa;            /* @fg */
+    border: 2px solid #a6b46c; /* @green */
+    border-radius: 20px;
+    
+    /* Zwiększ te wartości, żeby "ścisnąć" menu do środka */
+    margin: 250px 20px; /* Pierwsza wartość (250px) to góra/dół - to zmniejszy wysokość kafli */
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px;    /* Mniejsze, zgrabniejsze ikony */
+    
+    transition: all 0.2s ease-in-out;
+}
+
+/* Efekt najechania myszką */
+button:focus, button:hover {
+    background-color: #a6b46c; /* @green */
+    color: #2d353b;            /* @bg */
+    border-color: #d3c6aa;     /* @fg */
+    outline: none;
+}
+
+/* Ścieżki do ikon (standardowe w Fedorze) */
+#lock { background-image: image(url("/usr/share/wlogout/icons/lock.png")); }
+#logout { background-image: image(url("/usr/share/wlogout/icons/logout.png")); }
+#shutdown { background-image: image(url("/usr/share/wlogout/icons/shutdown.png")); }
+#reboot { background-image: image(url("/usr/share/wlogout/icons/reboot.png")); }

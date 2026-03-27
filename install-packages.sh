@@ -11,8 +11,8 @@ packages=(
     tmux
     zsh
     htop
-    taskwarrior
-    timewarrior
+    task
+    timew
     hyprland
     alacritty
     waybar
@@ -20,6 +20,7 @@ packages=(
     kubectl
     navi
     thefuck
+    zsh
 )
 
 echo "Checking for missing packages on Fedora..."
@@ -56,6 +57,11 @@ else
     echo "MesloLGS Nerd Font already exists, skipping."
 fi
 
+
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 
 {{ end -}}
 {{ end -}}
