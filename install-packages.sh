@@ -17,7 +17,6 @@ packages=(
     alacritty
     waybar
     wofi
-    kubectl
     navi
     thefuck
     zsh
@@ -27,9 +26,9 @@ echo "Checking for missing packages on Fedora..."
 
 sudo dnf install -y "${packages[@]}"
 
-if command -v flatpak &> /dev/null; then
-   sudo flatpak install flathub app.zen_browser.zen
-   sudo flatpak install flathub md.obsidian.Obsidian
+if command -v flatpak &>/dev/null; then
+    sudo flatpak install flathub app.zen_browser.zen
+    sudo flatpak install flathub md.obsidian.Obsidian
 fi
 
 # 2. Instalacja MesloLGS Nerd Font
@@ -37,7 +36,7 @@ FONT_DIR="$HOME/.local/share/fonts"
 if [ ! -d "$FONT_DIR/MesloLGS" ]; then
     echo "Installing MesloLGS Nerd Font..."
     mkdir -p "$FONT_DIR/MesloLGS"
-    
+
     # Linki do 4 podstawowych wariantów MesloLGS NF
     urls=(
         "https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf"
@@ -56,8 +55,6 @@ if [ ! -d "$FONT_DIR/MesloLGS" ]; then
 else
     echo "MesloLGS Nerd Font already exists, skipping."
 fi
-
-
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 

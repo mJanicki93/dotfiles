@@ -23,11 +23,23 @@ gcloud compute ssh --zone europe-west3-b monitor-backup-20241202-123018 --tunnel
 # SSH to Ansible
 gcloud compute ssh --zone "europe-west3-a" "ansible-control-node" --tunnel-through-iap --project "blulog-cloud"
 
+# SSH to Neo4j
+gcloud compute ssh --zone "europe-west3-a" "neo4j" --tunnel-through-iap --project "blulog-cloud"
+
+# SSH to Clickhouse
+gcloud compute ssh --zone "europe-west3-a" "clickhouse" --tunnel-through-iap --project "blulog-cloud"
+
 # SSH to Test
 gcloud compute ssh --zone "europe-west3-b" "bluconsole-test" --project "blulog-cloud"
 
 # PF Mysql
 kubectl port-forward svc/haproxy 3306:3306
+
+# PF Neo4j
+kubectl port-forward svc/haproxy 7474:7474
+
+# PF Neo4j-Bolt
+kubectl port-forward svc/haproxy 7687:7687
 
 # PF Clickhouse
 kubectl port-forward svc/haproxy 8123:8123

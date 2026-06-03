@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+TASK="$1"
+
+if [ -z "$TASK" ]; then
+  echo "Błąd: Podaj numer zadania"
+  exit 1
+fi
+
+jira issue delete "$TASK"

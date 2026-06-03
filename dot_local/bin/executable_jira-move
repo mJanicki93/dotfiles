@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+TASK="$1"
+MOVETO="$2"
+
+if [ -z "$TASK" ]; then
+  echo "Błąd: Podaj numer zadania"
+  exit 1
+fi
+
+if [ -z "$MOVETO" ]; then
+  echo "Błąd: Podaj docelowy status"
+fi
+
+jira issue move "$TASK" "$MOVETO"

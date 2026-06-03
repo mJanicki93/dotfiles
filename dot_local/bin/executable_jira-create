@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+SUMMARY="$1"
+BODY="$2"
+
+if [ -z "$SUMMARY" ]; then
+  echo "Błąd: Podaj tytuł zadania"
+  exit 1
+fi
+
+if [ -z "$BODY" ]; then
+  jira issue create -s "$SUMMARY" -t Task -a "michal.janicki@blulog.eu" --no-input
+  echo "dodano zadanie"
+  exit 1
+fi
+
+jira issue create -s "$SUMMARY" -b "$BODY" -t Task -a "michal.janicki@blulog.eu" --no-input

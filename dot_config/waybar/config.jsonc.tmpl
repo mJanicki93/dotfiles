@@ -3,7 +3,7 @@
   "layer": "bottom",
   "position": "top",
   "height": 36,
-  "margin-top": 8,
+  "margin-top": 0,
   "margin-left": 12,
   "margin-right": 12,
   "margin-bottom": 0,
@@ -11,18 +11,17 @@
   "exclusive": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "modules-left": ["clock#simpleclock", "hyprland/workspaces", "hyprland/window"],
   "modules-center": ["mpris"],
   "modules-right": [
     "cpu",
     "memory",
     "pulseaudio",
-    "clock",
-    "clock#simpleclock",
     "tray",
     "battery",
     "custom/notification",
-    "custom/power"
+    "custom/power",
+    "clock",
   ],
   "custom/spotify": {
     "format": "  {}",
@@ -89,8 +88,11 @@
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "format-muted": "  muted",
+    "format-bluetooth": " {volume}%",
     "format-icons": {
       "headphone": "",
+      "headset": "",
+      "hands-free": "",
       "default": [" ", " ", " "]
     },
     "on-click": "pavucontrol"

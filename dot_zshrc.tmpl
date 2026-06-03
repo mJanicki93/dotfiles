@@ -117,7 +117,6 @@ if [ -f '/Users/michaljanicki/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/m
 if [ -f '/Users/michaljanicki/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/michaljanicki/google-cloud-sdk/completion.zsh.inc'; fi
 
 alias kraft='python3 ~/devops/bcli/psh.py'
-alias bcli='~/bcli'
 # alias ls='colorls'
 alias zj='~/zellij'
 
@@ -126,6 +125,7 @@ alias v='nvim'
 alias notes='cd $HOME/notes/Notes/notes && nvim .'
 alias kompare='$HOME/repos/kompare/kompare'
 alias argo='kubectl-argo-rollouts'
+alias devops='distrobox enter devops && clear'
 
 # Taskwarrior
 alias tt='taskwarrior-tui'
@@ -134,7 +134,11 @@ alias tl='task modify priority:L'
 alias tm='task modify priority:M'
 alias th='task modify priority:H'
 
-
+# Jira
+alias j='jira-create'
+alias jl='jira issue list --plain -s "~Done" -s"~Cancelled" -q "project IS NOT EMPTY" -a "michal.janicki@blulog.eu"'
+alias jm='jira-move'
+alias jr='jira-remove'
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
@@ -147,12 +151,14 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR='nvim'
 export K9S_SKIN='nord'
+export ELECTRON_OZONE_PLATFORM_HINT="wayland"
+export OZONE_PLATFORM="wayland"
 
 if [ -f ~/zshrc.local ]; then
   source ~/.zshrc.local
 fi
 
-eval $(thefuck --alias)
+#eval $(thefuck --alias)
 echo ''
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
@@ -241,22 +247,22 @@ today() {
     if command -v task >/dev/null 2>&1; then
         printf "\n\033[1;35m🎯 Top 3 zadania na dziś:\033[0m\n"
         # task next wyświetla najważniejsze według urgency, limit:3 ucina listę
-        task next limit:3 
+        jl | tail 3
     fi
     printf "\n"
 }
 
 # Uruchomienie funkcji tylko w trybie interaktywnym terminala
-if [[ $- == *i* ]]; then
-    # Tworzymy unikalną nazwę pliku z dzisiejszą datą
-    FLAG_FILE="/tmp/kokpit_pokazany_$(date +%Y%m%d).flag"
-    
-    # Jeśli plik flaga nie istnieje, wyświetl kokpit i utwórz flagę
-    if [ ! -f "$FLAG_FILE" ]; then
-        today
-        touch "$FLAG_FILE"
-    fi
-fi
+#if [[ $- == *i* ]]; then
+#    # Tworzymy unikalną nazwę pliku z dzisiejszą datą
+#    FLAG_FILE="/tmp/kokpit_pokazany_$(date +%Y%m%d).flag"
+#
+#    # Jeśli plik flaga nie istnieje, wyświetl kokpit i utwórz flagę
+#    if [ ! -f "$FLAG_FILE" ]; then
+#        today
+#        touch "$FLAG_FILE"
+#    fi
+#fi
 
 obs-start() {
     # Upewnij się, że ścieżki zgadzają się z Twoim Vaultem
