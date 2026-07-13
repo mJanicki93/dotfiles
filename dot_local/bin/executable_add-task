@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+print_usage() {
+  echo "Użycie: add-task <tytuł> [-t tagi] [-c opis]"
+  exit 1
+}
+
+# 1. Walidacja: sprawdzamy czy podano argument i czy przypadkiem nie jest on flagą
+if [ -z "$1" ] || [[ "$1" == -* ]]; then
+  echo "Błąd: Podaj tytuł zadania jako pierwszy argument."
+  print_usage
+fi
+
+# 2. Pobranie tytułu
+name="$1"
+
+# 3. Odcięcie pierwszego argumentu. Reszta argumentów (flagi) przesuwa się w lewo.
+shift
+
+body=""
+tags=""
+
+# 4. Parsowanie flag. Usunięto 'n:', ponieważ tytuł pobieramy pozycyjnie.
+while getopts ':t:c:h' flag; do
+  case "${flag}" in
+  t) tags=${OPTARG} ;;
+  c) body=${OPTARG} ;;
+  h) print_usage ;;
+  *)
+    echo "Nieznana flaga: -$OPTARG"
+    print_usage
+    ;;
+  esac
+done
+
+# (Miejsce na logikę ticktick)
+ticktick task create --title "$name" --content "$body" --project "inbox" --tags "$tags"
+
+echo "dodano zadanie $name z tagami: $tags i opisem: $body "

@@ -129,10 +129,13 @@ alias devops='distrobox enter devops && clear'
 
 # Taskwarrior
 alias tt='taskwarrior-tui'
-alias t='task add'
+# alias t='task add'
 alias tl='task modify priority:L'
 alias tm='task modify priority:M'
 alias th='task modify priority:H'
+
+# TickTick
+alias t='add-task'
 
 # Jira
 alias j='jira-create'
@@ -298,3 +301,6 @@ obs-start() {
 }
 
 {{- end }}
+
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
