@@ -1,0 +1,548 @@
+2026-07-29T09:17:04.405160Z  INFO herdr::api::server: api server listening path=/home/michaljanicki/.config/herdr/herdr.sock
+2026-07-29T09:17:04.407826Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-07-29T09:17:04.496733Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-29T09:17:04.501412Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-07-29T09:17:04.504108Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=1737172
+2026-07-29T09:17:04.504748Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w1" pane_id=1
+2026-07-29T09:17:04.504791Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-29T09:17:04.504838Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-29T09:17:04.504864Z  INFO herdr::server::headless: created startup workspace cwd=/home/michaljanicki
+2026-07-29T09:17:04.505082Z  INFO herdr::server::headless: client protocol socket listening path=/home/michaljanicki/.config/herdr/herdr-client.sock
+2026-07-29T09:17:04.505150Z  INFO herdr::server::headless: herdr server started api_socket=/home/michaljanicki/.config/herdr/herdr.sock client_socket=/home/michaljanicki/.config/herdr/herdr-client.sock
+2026-07-29T09:17:04.505681Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=1737150
+2026-07-29T09:17:04.759597Z  INFO herdr::server::headless: client connected client_id=2 cols=253 rows=60 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-29T09:17:09.508316Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-29T09:17:10.873835Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-29T09:18:51.857251Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=60 cols=227 scrollback_limit_bytes=10000000
+2026-07-29T09:18:51.860513Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=1737864
+2026-07-29T09:18:51.860949Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-29T09:18:56.863908Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-29T09:19:09.607106Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-29T09:19:11.885786Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-29T09:19:14.861096Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-29T09:19:19.864307Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-29T09:19:40.930713Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=30 cols=227 scrollback_limit_bytes=10000000
+2026-07-29T09:19:40.933802Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=1738133
+2026-07-29T09:19:40.934222Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-29T09:19:45.938232Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-29T09:32:00.468052Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-29T09:32:05.472271Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-29T09:32:06.074341Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-07-29T09:47:04.498328Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-29T10:30:13.999330Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-29T11:00:14.007770Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-29T11:30:14.005578Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-29T12:00:14.007218Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-29T12:30:14.008887Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-30T06:10:41.328941Z  INFO herdr::api::server: api server listening path=/home/michaljanicki/.config/herdr/herdr.sock
+2026-07-30T06:10:41.330369Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-07-30T06:10:41.331231Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=24244
+2026-07-30T06:10:41.331405Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-07-30T06:10:41.331967Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=24247
+2026-07-30T06:10:41.332119Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-07-30T06:10:41.332559Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=24250
+2026-07-30T06:10:41.332672Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-07-30T06:10:41.332678Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-07-30T06:10:41.373966Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-30T06:10:41.375520Z  INFO herdr::server::headless: restored session already has workspaces; ignoring startup cwd cwd=/home/michaljanicki
+2026-07-30T06:10:41.375672Z  INFO herdr::server::headless: client protocol socket listening path=/home/michaljanicki/.config/herdr/herdr-client.sock
+2026-07-30T06:10:41.375699Z  INFO herdr::server::headless: herdr server started api_socket=/home/michaljanicki/.config/herdr/herdr.sock client_socket=/home/michaljanicki/.config/herdr/herdr-client.sock
+2026-07-30T06:10:41.375866Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=24228
+2026-07-30T06:10:41.402516Z  INFO herdr::server::headless: client connected client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-30T06:11:12.018503Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 1, signal: None }"
+2026-07-30T06:11:12.023626Z  INFO herdr::pane: pane session terminated pane=1 pid=24244 signal=Hangup
+2026-07-30T06:11:12.023796Z  WARN herdr::app::actions: PaneDied for unknown pane pane=1
+2026-07-30T06:11:14.155393Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 1, signal: None }"
+2026-07-30T06:11:14.159382Z  INFO herdr::pane: pane session terminated pane=2 pid=24247 signal=Hangup
+2026-07-30T06:11:14.159648Z  WARN herdr::app::actions: PaneDied for unknown pane pane=2
+2026-07-30T06:11:19.161487Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T06:11:57.696682Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=4 rows=60 cols=227 scrollback_limit_bytes=10000000
+2026-07-30T06:11:57.698171Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=4 pid=24825
+2026-07-30T06:11:57.698377Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w2" pane_id=4
+2026-07-30T06:11:57.698387Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-30T06:11:57.698443Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-30T06:11:59.778962Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-30T06:11:59.779037Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-30T06:12:04.780741Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T06:12:04.850227Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-30T06:12:04.851623Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=4 status="ExitStatus { code: 1, signal: None }"
+2026-07-30T06:12:04.857653Z  INFO herdr::pane: pane session terminated pane=4 pid=24825 signal=Hangup
+2026-07-30T06:12:04.857833Z  WARN herdr::app::actions: PaneDied for unknown pane pane=4
+2026-07-30T06:12:09.859860Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T06:12:57.835353Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T06:13:02.943238Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T06:13:33.926112Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=5 rows=60 cols=227 scrollback_limit_bytes=10000000
+2026-07-30T06:13:33.927746Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=5 pid=25719
+2026-07-30T06:13:33.928220Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3" pane_id=5
+2026-07-30T06:13:33.928231Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-30T06:13:33.928293Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-30T06:13:38.930260Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T06:14:23.517101Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T06:14:28.120810Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T06:15:28.833835Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=6 rows=60 cols=227 scrollback_limit_bytes=10000000
+2026-07-30T06:15:28.835377Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=6 pid=26617
+2026-07-30T06:15:28.835611Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-30T06:15:33.837409Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T06:15:34.615058Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-30T06:15:38.747560Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-30T06:15:43.749831Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T06:15:44.988270Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-30T06:15:49.990532Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T06:15:57.120319Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-30T06:15:57.120373Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-30T06:16:02.122979Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T06:16:21.605146Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-30T06:16:21.605201Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-30T06:16:26.606188Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T06:16:40.321503Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-30T06:16:40.323310Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=3 status="ExitStatus { code: 1, signal: None }"
+2026-07-30T06:16:40.330123Z  INFO herdr::pane: pane session terminated pane=3 pid=24250 signal=Hangup
+2026-07-30T06:16:40.330379Z  WARN herdr::app::actions: PaneDied for unknown pane pane=3
+2026-07-30T06:16:45.333031Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T06:16:46.428859Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=5 status="ExitStatus { code: 1, signal: None }"
+2026-07-30T06:16:46.432432Z  INFO herdr::pane: pane session terminated pane=5 pid=25719 signal=Hangup
+2026-07-30T06:16:46.432691Z  WARN herdr::app::actions: PaneDied for unknown pane pane=5
+2026-07-30T06:16:51.434816Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T06:17:00.739465Z  INFO herdr::logging: workspace renamed event="workspace.rename" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-30T06:17:05.741927Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T06:40:41.375032Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-30T07:01:35.572635Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=60 cell_width_px=0 cell_height_px=0
+2026-07-30T07:01:38.176354Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T07:01:40.179868Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=60 cell_width_px=0 cell_height_px=0
+2026-07-30T07:01:41.081626Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T07:02:01.959086Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-30T07:02:06.960889Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T07:03:43.033487Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=7 rows=60 cols=227 scrollback_limit_bytes=10000000
+2026-07-30T07:03:43.034950Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=7 pid=37962
+2026-07-30T07:03:43.035084Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T07:03:43.035102Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T07:03:48.036807Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T07:06:09.367899Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-30T07:06:14.188318Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T07:06:19.190968Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T07:07:22.929809Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=8 rows=60 cols=227 scrollback_limit_bytes=10000000
+2026-07-30T07:07:22.930914Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=8 pid=40151
+2026-07-30T07:07:22.931020Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w4" pane_id=8
+2026-07-30T07:07:22.931023Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w4"
+2026-07-30T07:07:22.931045Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t1"
+2026-07-30T07:07:27.933567Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T07:07:47.984900Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t1"
+2026-07-30T07:07:52.986228Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T07:08:19.212381Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w4"
+2026-07-30T07:08:19.212438Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t1"
+2026-07-30T07:08:21.331719Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w4"
+2026-07-30T07:08:21.333430Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=8 status="ExitStatus { code: 1, signal: None }"
+2026-07-30T07:08:21.339111Z  INFO herdr::pane: pane session terminated pane=8 pid=40151 signal=Hangup
+2026-07-30T07:08:21.339258Z  WARN herdr::app::actions: PaneDied for unknown pane pane=8
+2026-07-30T07:08:26.341284Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T07:08:30.393537Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=9 rows=60 cols=227 scrollback_limit_bytes=10000000
+2026-07-30T07:08:30.394686Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=9 pid=40481
+2026-07-30T07:08:30.394784Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w5" pane_id=9
+2026-07-30T07:08:30.394787Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-07-30T07:08:30.394814Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T07:08:35.395994Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T07:10:32.241971Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=10 rows=60 cols=227 scrollback_limit_bytes=10000000
+2026-07-30T07:10:32.243144Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=10 pid=41331
+2026-07-30T07:10:32.243566Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t2"
+2026-07-30T07:10:37.245833Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T07:11:29.343219Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-30T07:11:29.343283Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T07:11:34.345402Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T07:11:36.026639Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-30T07:11:36.088251Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T07:11:36.284849Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T07:11:40.391364Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-30T07:11:40.488561Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T07:11:40.588640Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T07:12:40.076199Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-07-30T07:12:40.076264Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t2"
+2026-07-30T07:12:45.078050Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T07:17:04.871946Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-30T07:23:37.113706Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T07:23:42.919249Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T07:23:49.452204Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-30T07:23:49.452255Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T07:23:54.454166Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T07:26:12.976543Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-07-30T07:26:12.976633Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t2"
+2026-07-30T07:26:17.979641Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T07:28:50.912029Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-30T07:28:50.912113Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T07:28:55.916103Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T07:29:08.281598Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-07-30T07:29:08.281665Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t2"
+2026-07-30T07:29:09.765983Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T07:29:14.768951Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T07:29:57.998887Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-30T07:29:57.998970Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T07:30:03.001495Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T07:33:34.560521Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-07-30T07:33:34.560586Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T07:33:39.562689Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T07:34:37.127524Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-30T07:34:37.127587Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T07:34:42.128921Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T07:35:20.738552Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-30T07:35:22.785333Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T07:35:27.786852Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T07:35:32.896737Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-07-30T07:35:32.896850Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T07:35:37.898517Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T07:42:13.734979Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T07:42:13.935154Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T07:47:04.872777Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-30T07:48:20.693619Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T07:48:20.893883Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T07:52:13.994555Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-30T07:52:13.994649Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T07:52:18.995651Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T07:54:36.868710Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-30T07:59:09.016280Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T07:59:09.216591Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T07:59:51.351019Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-07-30T07:59:51.351086Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T07:59:56.353530Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:01:32.727205Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=11 rows=60 cols=227 scrollback_limit_bytes=10000000
+2026-07-30T08:01:32.728489Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=11 pid=93377
+2026-07-30T08:01:32.728616Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:01:37.731011Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:02:25.795328Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:02:30.798057Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:03:32.893271Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-30T08:03:32.893356Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T08:03:37.895030Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:03:59.886034Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-07-30T08:03:59.886119Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:04:02.076089Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:04:07.083849Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:04:11.017020Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:04:16.019551Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:05:05.196500Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-30T08:05:05.196566Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T08:05:10.198508Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:08:02.352734Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-07-30T08:08:02.352805Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:08:07.356534Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:09:32.112386Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-30T08:09:32.113420Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T08:09:32.855308Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-07-30T08:09:32.855367Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:09:37.857118Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:10:03.139655Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:10:08.141378Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:11:01.723048Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:11:06.725213Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:11:18.760201Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=9 status="ExitStatus { code: 1, signal: None }"
+2026-07-30T08:11:18.785879Z  INFO herdr::pane: pane session terminated pane=9 pid=40481 signal=Hangup
+2026-07-30T08:11:18.786227Z  WARN herdr::app::actions: PaneDied for unknown pane pane=9
+2026-07-30T08:11:21.169888Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=12 rows=60 cols=227 scrollback_limit_bytes=10000000
+2026-07-30T08:11:21.171023Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=12 pid=105926
+2026-07-30T08:11:21.171150Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:11:26.173379Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:12:18.787411Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=12 status="ExitStatus { code: 1, signal: None }"
+2026-07-30T08:12:18.812904Z  INFO herdr::pane: pane session terminated pane=12 pid=105926 signal=Hangup
+2026-07-30T08:12:18.813083Z  WARN herdr::app::actions: PaneDied for unknown pane pane=12
+2026-07-30T08:12:20.678600Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=13 rows=60 cols=227 scrollback_limit_bytes=10000000
+2026-07-30T08:12:20.679833Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=13 pid=108410
+2026-07-30T08:12:20.679942Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:12:25.682244Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:12:43.182359Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-30T08:12:43.217298Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T08:12:43.416552Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T08:16:11.682299Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-30T08:16:11.683681Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T08:16:16.684650Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:16:34.474038Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T08:17:04.874206Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-30T08:17:12.126425Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T08:28:18.312736Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-07-30T08:28:18.312807Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:28:23.314549Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:28:28.543604Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:28:29.961380Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:28:32.106166Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:28:32.555508Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:28:37.557640Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:30:35.442717Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:30:40.444209Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:31:23.300329Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:31:27.628892Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:31:32.631020Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:31:44.024894Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:31:49.025713Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:31:52.820147Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:31:57.822424Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:32:02.015391Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:32:07.016992Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:32:42.429452Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T08:32:42.629827Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T08:33:55.051058Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:34:00.053170Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:34:37.055695Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:34:42.057318Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:39:45.806441Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:39:50.810763Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:40:13.476184Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:40:18.477896Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:41:07.580422Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:41:12.582672Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:42:32.828557Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:42:37.829988Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:42:46.515381Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:42:51.517566Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:43:40.797311Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:43:45.799104Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:44:09.184887Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:44:14.187312Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:44:26.724571Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:44:31.727133Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:44:44.464430Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:44:49.466534Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:45:17.262856Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:45:22.265102Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:47:04.874668Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-30T08:50:14.437407Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:50:19.438901Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:51:04.855455Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:51:09.859088Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T08:51:14.208535Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T08:51:14.308798Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T08:56:00.350672Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T08:56:00.550598Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T08:56:29.188878Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T08:56:29.288843Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T08:56:33.393096Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T08:56:33.593340Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T08:56:41.201197Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T08:56:41.301327Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T08:57:15.557031Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T08:57:19.210209Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-30T08:57:19.210276Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T08:57:24.212187Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T09:05:49.114241Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-07-30T09:05:49.114289Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T09:05:54.116483Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T09:05:54.745802Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T09:05:59.748572Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T09:06:59.211025Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-30T09:06:59.211082Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T09:07:04.212787Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T09:10:22.757338Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-07-30T09:10:22.757399Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T09:10:27.759604Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T09:11:43.667165Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T09:11:43.767364Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T09:11:48.373928Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T09:11:48.574231Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T09:13:09.568368Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T09:13:09.668302Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T09:13:18.778972Z  INFO herdr::server::headless: client resize client_id=2 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T09:13:18.877797Z  INFO herdr::server::headless: client resize client_id=2 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T09:13:55.988208Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T09:14:00.990299Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T09:14:27.445302Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T09:14:32.448757Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T09:16:04.803987Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-07-30T09:16:09.806077Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T09:17:04.876093Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-30T09:18:01.740875Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-30T09:18:01.740931Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T09:18:06.743723Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-30T09:18:18.470250Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=14 rows=60 cols=227 scrollback_limit_bytes=10000000
+2026-07-30T09:18:18.471907Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=14 pid=161339
+2026-07-30T09:18:18.472102Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w6" pane_id=14
+2026-07-30T09:18:18.472117Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w6"
+2026-07-30T09:18:18.472181Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w6" tab_id="w6:t1"
+2026-07-30T09:18:23.475595Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=3
+2026-07-30T09:18:24.893486Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=15 rows=60 cols=227 scrollback_limit_bytes=10000000
+2026-07-30T09:18:24.894703Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=15 pid=161502
+2026-07-30T09:18:24.894828Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w7" pane_id=15
+2026-07-30T09:18:24.894831Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w7"
+2026-07-30T09:18:24.894877Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-07-30T09:18:29.896862Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=4
+2026-07-30T09:18:36.371366Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-30T09:18:36.371445Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T09:18:41.378493Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=4
+2026-07-30T09:18:59.226949Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-07-30T09:21:11.074225Z  INFO herdr::server::headless: client connected client_id=4 cols=253 rows=61 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-30T09:21:30.706201Z  INFO herdr::server::headless: client resize client_id=4 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T09:21:34.209376Z  INFO herdr::server::headless: client resize client_id=4 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T09:22:01.955582Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-30T09:22:03.195511Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T09:22:08.197213Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=4
+2026-07-30T09:22:30.166627Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w6"
+2026-07-30T09:22:30.166705Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w6" tab_id="w6:t1"
+2026-07-30T09:22:32.848730Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w6"
+2026-07-30T09:22:32.850621Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=14 status="ExitStatus { code: 1, signal: None }"
+2026-07-30T09:22:32.857746Z  INFO herdr::pane: pane session terminated pane=14 pid=161339 signal=Hangup
+2026-07-30T09:22:32.857943Z  WARN herdr::app::actions: PaneDied for unknown pane pane=14
+2026-07-30T09:22:35.183002Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w7"
+2026-07-30T09:22:35.184713Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=15 status="ExitStatus { code: 1, signal: None }"
+2026-07-30T09:22:35.187258Z  INFO herdr::pane: pane session terminated pane=15 pid=161502 signal=Hangup
+2026-07-30T09:22:35.187438Z  WARN herdr::app::actions: PaneDied for unknown pane pane=15
+2026-07-30T09:22:38.128360Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=11 status="ExitStatus { code: 1, signal: None }"
+2026-07-30T09:22:38.144848Z  INFO herdr::pane: pane session terminated pane=11 pid=93377 signal=Hangup
+2026-07-30T09:22:38.145074Z  WARN herdr::app::actions: PaneDied for unknown pane pane=11
+2026-07-30T09:22:40.604627Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=13 status="ExitStatus { code: 1, signal: None }"
+2026-07-30T09:22:40.608732Z  INFO herdr::pane: pane session terminated pane=13 pid=108410 signal=Hangup
+2026-07-30T09:22:40.609070Z  WARN herdr::app::actions: PaneDied for unknown pane pane=13
+2026-07-30T09:22:42.573014Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-07-30T09:22:42.574828Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=10 status="ExitStatus { code: 1, signal: None }"
+2026-07-30T09:22:42.576540Z  INFO herdr::pane: pane session terminated pane=10 pid=41331 signal=Hangup
+2026-07-30T09:22:42.576815Z  WARN herdr::app::actions: PaneDied for unknown pane pane=10
+2026-07-30T09:22:47.578041Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T09:22:50.730940Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-30T09:22:55.733750Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T09:54:16.854920Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-30T10:17:18.326751Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=6 status="ExitStatus { code: 1, signal: None }"
+2026-07-30T10:17:18.332528Z  INFO herdr::pane: pane session terminated pane=6 pid=26617 signal=Hangup
+2026-07-30T10:17:18.332803Z  WARN herdr::app::actions: PaneDied for unknown pane pane=6
+2026-07-30T10:17:23.334033Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T10:17:29.540622Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=16 rows=60 cols=227 scrollback_limit_bytes=10000000
+2026-07-30T10:17:29.541826Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=16 pid=185596
+2026-07-30T10:17:29.541923Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t3"
+2026-07-30T10:17:29.541937Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t3"
+2026-07-30T10:17:34.543988Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T10:19:10.486792Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-30T10:19:10.560041Z  INFO herdr::server::headless: client resize client_id=4 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T10:19:10.760373Z  INFO herdr::server::headless: client resize client_id=4 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T10:20:06.813802Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T10:20:11.816445Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T10:21:33.524175Z  INFO herdr::server::headless: client resize client_id=4 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T10:21:33.724385Z  INFO herdr::server::headless: client resize client_id=4 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T10:23:12.525211Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t3"
+2026-07-30T10:23:14.505401Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T10:23:19.507702Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T10:24:16.855632Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-30T10:24:58.767289Z  INFO herdr::server::headless: client resize client_id=4 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T10:25:04.172372Z  INFO herdr::server::headless: client resize client_id=4 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T10:45:37.556848Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=17 rows=60 cols=227 scrollback_limit_bytes=10000000
+2026-07-30T10:45:37.564809Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=17 pid=198879
+2026-07-30T10:45:37.564919Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t4"
+2026-07-30T10:45:37.564934Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t4"
+2026-07-30T10:45:42.567754Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T10:46:44.568142Z  INFO herdr::server::headless: client resize client_id=4 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T10:46:49.873057Z  INFO herdr::server::headless: client resize client_id=4 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T10:46:51.331431Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T10:46:56.332613Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T10:47:28.656089Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t4"
+2026-07-30T10:47:33.658136Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T10:51:06.802308Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-30T10:51:06.896821Z  INFO herdr::server::headless: client resize client_id=4 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T10:51:06.996876Z  INFO herdr::server::headless: client resize client_id=4 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T10:54:05.405423Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T10:54:10.407443Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T10:54:14.135386Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t4"
+2026-07-30T10:54:16.856956Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-30T10:54:19.136915Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T10:54:25.820296Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T10:54:30.821881Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T10:54:32.626092Z  INFO herdr::server::headless: client resize client_id=4 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T10:54:32.826426Z  INFO herdr::server::headless: client resize client_id=4 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T10:54:36.549109Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t4"
+2026-07-30T10:54:41.550875Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T11:05:45.972387Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t3"
+2026-07-30T11:05:50.976804Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T11:06:24.867742Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-30T11:06:27.424418Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t4"
+2026-07-30T11:06:32.426913Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T11:06:48.065713Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t3"
+2026-07-30T11:06:53.067969Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T11:06:55.070554Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t4"
+2026-07-30T11:07:00.073493Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T11:09:26.607657Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-30T11:09:29.464439Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-30T11:09:31.152439Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t3"
+2026-07-30T11:09:36.153835Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T11:09:36.829575Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t4"
+2026-07-30T11:09:41.831925Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T11:09:51.889441Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t3"
+2026-07-30T11:09:56.892445Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T11:14:56.441673Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-30T11:14:59.104094Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t4"
+2026-07-30T11:15:04.106744Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T11:18:23.989678Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-30T11:18:24.088174Z  INFO herdr::server::headless: client resize client_id=4 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T11:18:24.288332Z  INFO herdr::server::headless: client resize client_id=4 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T11:24:16.857760Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-30T11:37:01.585863Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-30T11:37:01.655635Z  INFO herdr::server::headless: client resize client_id=4 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T11:37:01.855973Z  INFO herdr::server::headless: client resize client_id=4 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T11:45:05.379861Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-30T11:45:05.419809Z  INFO herdr::server::headless: client resize client_id=4 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T11:45:05.620121Z  INFO herdr::server::headless: client resize client_id=4 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T11:45:55.614837Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-30T11:45:55.672007Z  INFO herdr::server::headless: client resize client_id=4 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T11:45:55.869664Z  INFO herdr::server::headless: client resize client_id=4 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T11:47:02.642280Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-30T11:47:02.741271Z  INFO herdr::server::headless: client resize client_id=4 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T11:47:02.841384Z  INFO herdr::server::headless: client resize client_id=4 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T11:54:16.858862Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-30T12:15:23.354577Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-30T12:15:23.413910Z  INFO herdr::server::headless: client resize client_id=4 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T12:15:23.604086Z  INFO herdr::server::headless: client resize client_id=4 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T12:19:05.105885Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=18 rows=60 cols=227 scrollback_limit_bytes=10000000
+2026-07-30T12:19:05.107533Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=18 pid=235627
+2026-07-30T12:19:05.107653Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t5"
+2026-07-30T12:19:05.107671Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t5"
+2026-07-30T12:19:10.117736Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T12:20:29.180430Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t4"
+2026-07-30T12:20:34.192413Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=1
+2026-07-30T12:20:54.973674Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-30T12:20:55.094152Z  INFO herdr::server::headless: client resize client_id=4 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T12:20:55.194281Z  INFO herdr::server::headless: client resize client_id=4 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T12:22:13.280403Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-30T12:22:13.366193Z  INFO herdr::server::headless: client resize client_id=4 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T12:22:13.466334Z  INFO herdr::server::headless: client resize client_id=4 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T12:24:16.860118Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-30T12:54:16.861248Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-30T12:59:50.445630Z  INFO herdr::server::headless: client resize client_id=4 cols=126 rows=33 cell_width_px=0 cell_height_px=0
+2026-07-30T12:59:51.246487Z  INFO herdr::server::headless: client resize client_id=4 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-30T19:04:57.523525Z  INFO herdr::server::headless: client resize client_id=4 cols=125 rows=32 cell_width_px=0 cell_height_px=0
+2026-07-30T19:05:01.329606Z  INFO herdr::server::headless: client resize client_id=4 cols=121 rows=30 cell_width_px=0 cell_height_px=0
+2026-07-30T19:05:01.429647Z  INFO herdr::server::headless: client resize client_id=4 cols=125 rows=32 cell_width_px=0 cell_height_px=0
+2026-07-30T19:05:01.930041Z  INFO herdr::server::headless: client resize client_id=4 cols=121 rows=30 cell_width_px=0 cell_height_px=0
+2026-07-30T19:05:02.330403Z  INFO herdr::server::headless: client resize client_id=4 cols=125 rows=32 cell_width_px=0 cell_height_px=0
+2026-07-30T19:05:13.740842Z  INFO herdr::server::headless: client resize client_id=4 cols=61 rows=32 cell_width_px=0 cell_height_px=0
+2026-07-30T19:05:18.086114Z  INFO herdr::server::headless: client disconnected client_id=4
+2026-07-31T04:49:40.759852Z  INFO herdr::server::headless: client connected client_id=6 cols=253 rows=61 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-31T04:49:58.940998Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=19 rows=60 cols=227 scrollback_limit_bytes=10000000
+2026-07-31T04:49:58.942494Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=19 pid=263998
+2026-07-31T04:49:58.942637Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w8" pane_id=19
+2026-07-31T04:49:58.942644Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w8"
+2026-07-31T04:49:58.942663Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t1"
+2026-07-31T04:50:03.953088Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-31T04:50:17.807974Z  INFO herdr::server::headless: client resize client_id=6 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-31T04:50:21.412941Z  INFO herdr::server::headless: client resize client_id=6 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-31T04:50:31.193859Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-31T04:50:31.193926Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t4"
+2026-07-31T04:50:36.207164Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-31T04:52:07.255915Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-31T04:57:09.547851Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w8"
+2026-07-31T04:57:09.547945Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t1"
+2026-07-31T04:57:14.560227Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-31T04:57:52.427104Z  INFO herdr::server::headless: client resize client_id=6 cols=125 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-31T04:57:55.629975Z  INFO herdr::server::headless: client resize client_id=6 cols=253 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-31T04:58:03.779348Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-31T04:58:03.779424Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t4"
+2026-07-31T04:58:08.789068Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-31T05:05:15.499809Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t3"
+2026-07-31T05:05:16.370609Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t5"
+2026-07-31T05:05:16.843856Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t4"
+2026-07-31T05:05:17.779280Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t3"
+2026-07-31T05:05:18.267719Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-31T05:05:23.269506Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-31T05:06:58.204603Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t3"
+2026-07-31T05:07:03.206231Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=2
+2026-07-31T05:07:29.088245Z  INFO herdr::app::worktrees: opening worktree dialog ws_idx=0 repo_root=/home/michaljanicki/notes branch="worktree/lucky-cloud-1ecc" checkout_path=/home/michaljanicki/.herdr/worktrees/notes/worktree-lucky-cloud-1ecc
+2026-07-31T05:11:44.042702Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=20 rows=60 cols=227 scrollback_limit_bytes=10000000
+2026-07-31T05:11:44.045027Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=20 pid=301696
+2026-07-31T05:11:44.045301Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w9" pane_id=20
+2026-07-31T05:11:44.045322Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w9"
+2026-07-31T05:11:44.045387Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w9" tab_id="w9:t1"
+2026-07-31T05:11:49.047506Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=3
+2026-07-31T05:12:09.588329Z  INFO herdr::logging: workspace renamed event="workspace.rename" subsystem="workspace" outcome="ok" workspace_id="w9"
+2026-07-31T05:12:14.589966Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=3
+2026-07-31T05:12:18.934632Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w9"
+2026-07-31T05:12:18.934699Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w9" tab_id="w9:t1"
+2026-07-31T05:12:23.936526Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/michaljanicki/.config/herdr/session.json workspaces=3
